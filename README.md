@@ -1,5 +1,3 @@
-[Drum Machine](nextjs-drum-machine.vercel.app/)
-
 ## A Front End Project
 
 Built in VS Code with the React framework Nextjs and TailWindCSS.
@@ -14,3 +12,5 @@ Features:
 - Switch between instruments
 - Responsive design
 - Accessibility guidelines followed
+
+Link: [Website](https://nextjs-drum-machine.vercel.app/)
