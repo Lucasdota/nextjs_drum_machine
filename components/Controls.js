@@ -104,32 +104,31 @@ export default function Controls({power, setOnOff}) {
 
             <div className="flex flex-col justify-center items-center ">
                 Power
-                <button id="power" onClick={handleClick} className="w-14 h-6 bg-black p-1 drop-shadow-[0px_0px_2px_rgb(253_230_138)] border-amber-300 border">
+                <button aria-label="Power on: click to switch between states, turning on and off the sound." id="power" onClick={handleClick} className="w-14 h-6 bg-black p-1 drop-shadow-[0px_0px_2px_rgb(253_230_138)] border-amber-300 border">
                     <div id="inner-switch" className="mx-1 w-[16px] h-full bg-amber-500"></div>
                 </button>
             </div>
 
-            <i><MusicNotesPlus size={28} weight="fill" className="float-right" /></i>
+            <i alt="music note icon"><MusicNotesPlus size={28} weight="fill" className="float-right" /></i>
 
             <div id="display-container" className="w-2/3 h-11 bg-neutral-400 border drop-shadow-[0px_0px_2px_rgb(253_230_138)] border-amber-300 flex justify-center items-center">
-                <p id="display"></p>
+                <p aria-label="displays the previous sound played" id="display"></p>
             </div>
 
-            <div id="volume-container" className="flex gap-2 justify-center items-center">
-                <SpeakerSimpleX size={20} weight="fill" />
-                <input id="volume-bar" className="hover:opacity-100 opacity-70 w-full h-1 rounded-lg bg-neutral-300 shadow-[1px_1px_3px_black]" type="range" onChange={changeVolume} />
-                <SpeakerSimpleHigh size={20} weight="fill" />
-            </div>
+            <label for="volume-bar" id="volume-container" className="flex gap-2 justify-center items-center">
+                <SpeakerSimpleX size={20} weight="fill" alt="muted speaker icon" />
+                <input aria-label="Control the volume" id="volume-bar" className="hover:opacity-100 opacity-70 w-full h-1 rounded-lg bg-neutral-300 shadow-[1px_1px_3px_black]" type="range" onChange={changeVolume} />
+                <SpeakerSimpleHigh size={20} weight="fill" alt="loud speaker icon" />
+            </label>
 
             <fieldset id="switch-container" className="flex justify-center items-center md:mb-0 mb-5">
-                <div className="mr-3 flex justify-center items-center">
-                    <input className="checked:drop-shadow-lg" id="heater" type="radio" value="heater" name="switch" onClick={switchToHeater} />
-                </div> 
-                <div className="ml-3 flex justify-center items-center gap-2">
-                    <input className=" checked:drop-shadow-lg" id="piano" type="radio" value="piano" name="switch" onClick={switchToPiano} />
-                </div>
+                <label for="heater" className="mr-3 flex justify-center items-center">
+                    <input aria-label="Select heater kit" className="checked:drop-shadow-lg" id="heater" type="radio" value="heater" name="switch" onClick={switchToHeater} />
+                </label> 
+                <label for="piano" className="ml-3 flex justify-center items-center gap-2">
+                    <input aria-label="Select smooth piano kit" className="checked:drop-shadow-lg" id="piano" type="radio" value="piano" name="switch" onClick={switchToPiano} />
+                </label>
             </fieldset>
-
         </div>
     )
 }

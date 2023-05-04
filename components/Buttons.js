@@ -50,7 +50,7 @@ export default function Buttons({power}) {
     return (
         <div className="grid grid-rows-3 grid-cols-3 gap-[9px] row-start-1 row-end-2 col-start-1 col-end-2 md:col-end-4 md:m-7 m-3">
 
-            <button id="Heater-1"
+            <button aria-label="Press the key Q" id="Heater-1"
                 onClick={() => {
                     const btn = document.querySelector(".heater-1");
                     const desc = document.querySelector(".heater-1").id;
@@ -63,7 +63,7 @@ export default function Buttons({power}) {
                 <audio id="Q" src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" type="audio/mp3" className="clip" />
             </button>   
 
-            <button id="Heater-2" onClick={() => {
+            <button aria-label="Press the key W" id="Heater-2" onClick={() => {
                 const btn = document.querySelector(".heater-2");
                 const desc = document.querySelector(".heater-2").id;
                 btnAnimation(btn);
@@ -75,7 +75,7 @@ export default function Buttons({power}) {
                 <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" type="audio/mp3" id="W" className="clip"/>
             </button>  
 
-            <button id="Heater-3" onClick={() => {
+            <button aria-label="Press the key E" id="Heater-3" onClick={() => {
                 const btn = document.querySelector(".heater-3");
                 const desc = document.querySelector(".heater-3").id;
                 btnAnimation(btn);
@@ -87,7 +87,7 @@ export default function Buttons({power}) {
                 <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" type="audio/mp3" id="E" className="clip"/>
             </button> 
 
-            <button id="Heater-4" onClick={() => {
+            <button aria-label="Press the key A" id="Heater-4" onClick={() => {
                 const btn = document.querySelector(".heater-4");
                 const desc = document.querySelector(".heater-4").id;
                 btnAnimation(btn);
@@ -99,7 +99,7 @@ export default function Buttons({power}) {
                 <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" type="audio/mp3" id="A" className="clip"/>
             </button> 
 
-            <button id="Clap" onClick={() => {
+            <button aria-label="Press the key S" id="Clap" onClick={() => {
                 const btn = document.querySelector(".clap");
                 const desc = document.querySelector(".clap").id;
                 btnAnimation(btn);
@@ -111,7 +111,7 @@ export default function Buttons({power}) {
                 <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" type="audio/mp3" id="S" className="clip"/>
             </button>   
 
-            <button id="Open-HH" onClick={() => {
+            <button aria-label="Press the key D" id="Open-HH" onClick={() => {
                 const btn = document.querySelector(".open-hh");
                 const desc = document.querySelector(".open-hh").id;
                 btnAnimation(btn);
@@ -123,7 +123,7 @@ export default function Buttons({power}) {
                 <audio src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" type="audio/mp3" id="D" className="clip"/>
             </button>   
 
-            <button id="Kick-n'-Hat" onClick={() => {
+            <button aria-label="Press the key Z" id="Kick-n'-Hat" onClick={() => {
                 const btn = document.querySelector(".kick-n-hat");
                 const desc = document.querySelector(".kick-n-hat").id;
                 btnAnimation(btn);
@@ -135,7 +135,7 @@ export default function Buttons({power}) {
                 <audio src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" type="audio/mp3" id="Z" className="clip"/>
             </button>   
 
-            <button id="Kick" onClick={() => {
+            <button aria-label="Press the key X" id="Kick" onClick={() => {
                 const btn = document.querySelector(".kick");
                 const desc = document.querySelector(".kick").id;
                 btnAnimation(btn);
@@ -147,7 +147,7 @@ export default function Buttons({power}) {
                 <audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" type="audio/mp3" id="X" className="clip"/>
             </button>   
 
-            <button id="Closed-HH" onClick={() => {
+            <button aria-label="Press the key C" id="Closed-HH" onClick={() => {
                 const btn = document.querySelector(".closed-hh");
                 const desc = document.querySelector(".closed-hh").id;
                 btnAnimation(btn);

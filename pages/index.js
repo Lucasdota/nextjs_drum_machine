@@ -15,6 +15,7 @@ export default function Home() {
           <link rel="icon" href="/music.png" />
       </Head>
       <main id="main" className="w-screen h-screen bg-neutral-600 flex justify-center items-center">
+        <title className="absolute hidden">A Drum Machine! Play it with the keys Q, W, E, A, S, D, Z, X and C</title>
         <div id="drum-machine" className="w-[350px] md:w-[680px] bg-neutral-400 grid grid-rows-2 md:grid-rows-1 grid-cols-1 md:grid-cols-5 border-4 border-amber-500 ">
           <Buttons power={power} />
           <Controls power={power} setOnOff={setOnOff} />
