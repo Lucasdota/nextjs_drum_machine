@@ -1,6 +1,6 @@
 ## A Front End Project
 
-Built in VS Code with the React framework Nextjs and TailWindCSS.
+Built in VS Code with the React framework Nextjs and TailwindCSS.
 
 Features:
 
