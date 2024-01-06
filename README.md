@@ -1,8 +1,8 @@
-## A Front End Project
+## Drum Machine
 
-Built in VS Code with the React framework Nextjs and TailwindCSS.
+### A drum machine with switch keys.
 
-Features:
+Main features:
 
 - Audio elements
 - Trigger audios with corresponding keys
@@ -13,4 +13,4 @@ Features:
 - Responsive design
 - Accessibility guidelines followed
 
-Link: [Website](https://nextjs-drum-machine.vercel.app/)
+Website: [click here](https://nextjs-drum-machine.vercel.app/)
